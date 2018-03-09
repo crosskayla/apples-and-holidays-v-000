@@ -95,5 +95,4 @@ def all_holidays_with_bbq(holiday_hash)
       supplies.include?("BBQ")
     end
   end
-  return BBQ_holidays
 end
