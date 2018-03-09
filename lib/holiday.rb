@@ -18,6 +18,8 @@ holiday_hash = {
   }
 supply = "Balloons"
 
+supply_array = ["decorations", "food"]
+
 
 def second_supply_for_fourth_of_july(holiday_hash)
   holiday_hash[:summer][:fourth_of_july][1]
@@ -56,6 +58,8 @@ def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_arr
     end
   end
 end
+
+add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
 
 def all_winter_holiday_supplies(holiday_hash)
   # return an array of all of the supplies that are used in the winter season
