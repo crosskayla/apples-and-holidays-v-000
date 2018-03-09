@@ -57,8 +57,8 @@ def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_arr
   holiday_hash
 end
 
-season = "fall"
-holiday_name = "columbus day"
+season = :fall
+holiday_name = :columbus_day
 supply_array = ["party stuff", "arrays"]
 
 add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
