@@ -76,7 +76,7 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |season, holidays|
     puts "#{season.to_s.capitalize}:"
     holidays.each do |holiday, supplies|
-      if holiday.to_s.contains?('_')
+      if holiday.to_s.include?('_')
         holiday.split('_').each{|word| word.capitalize}.join(" ")
         binding.pry
       end
