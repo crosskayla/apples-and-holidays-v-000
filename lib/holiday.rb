@@ -79,9 +79,10 @@ def all_supplies_in_holidays(holiday_hash)
       if holiday.to_s.include?('_')
         printable_holiday = holiday.to_s.split('_').collect{|word| word.capitalize}
         printable_holiday.join(" ")
-        binding.pry
+        print "\t #{holiday.to_s.capitalize}:"
+      else
+        print "\t #{holiday.to_s.capitalize}:"
       end
-      print "\t #{holiday.to_s.capitalize}:"
       puts "#{supplies.join(", ")}"
     end
   end
