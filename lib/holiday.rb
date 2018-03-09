@@ -16,10 +16,6 @@ holiday_hash = {
       :memorial_day => ["BBQ"]
     }
   }
-supply = "Balloons"
-
-supply_array = ["decorations", "food"]
-
 
 def second_supply_for_fourth_of_july(holiday_hash)
   holiday_hash[:summer][:fourth_of_july][1]
@@ -52,7 +48,7 @@ end
 def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
   # code here
   # remember to return the updated hash
-  holiday_hash.each do |seasons, holidays|
+  holiday_hash.each! do |seasons, holidays|
     if seasons.to_s == season
       holidays[holiday_name.to_sym] = supply_array
     end
