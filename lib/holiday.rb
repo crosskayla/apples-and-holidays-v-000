@@ -51,10 +51,13 @@ def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_arr
   holiday_hash.each do |seasons, holidays|
     if seasons.to_s == season
       holidays[holiday_name.to_sym] = supply_array
+      binding.pry
     end
   end
   holiday_hash
 end
+
+add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
 
 def all_winter_holiday_supplies(holiday_hash)
   # return an array of all of the supplies that are used in the winter season
