@@ -94,6 +94,7 @@ def all_holidays_with_bbq(holiday_hash)
     holidays.each do |holiday, supplies|
       holiday.select do |item|
         holidays.values.include?("BBQ")
+      end
     end
     binding.pry
   end
