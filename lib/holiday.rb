@@ -81,7 +81,7 @@ def all_supplies_in_holidays(holiday_hash)
         printable_holiday.join(" ")
         print "\t #{printable_holiday}: "
       else
-        print "\t #{holiday.to_s.capitalize}:"
+        print "\t #{holiday.to_s.capitalize}: "
       end
       puts "#{supplies.join(", ")}"
     end
