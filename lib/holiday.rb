@@ -92,7 +92,6 @@ def all_holidays_with_bbq(holiday_hash)
   # include the string "BBQ"
   holidays = holiday_hash.values
   binding.pry
-  end
 end
 
 all_holidays_with_bbq(holiday_hash)
